@@ -1,0 +1,151 @@
+/*### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%) */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat&display=swap');
+
+*{
+    margin:0 px;
+    box-sizing: border-box;
+}
+
+img{ 
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0 1rem;
+}
+
+/*container*/
+
+.container{
+    background-color: white;
+    max-width: 350px;
+    border-radius: 15px;
+}
+
+.container img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 0;
+}
+
+/*product decription*/
+.prod-desc{
+    color:hsl(228, 12%, 48%); 
+    padding: 1rem;
+}
+
+.perfume{
+    letter-spacing: 0.3rem;
+}
+
+.prod-desc h1{
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+}
+
+/*prices*/
+
+.prices{
+    display: flex;
+    align-items: center;
+}
+
+.newprice{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.oldprice{
+    padding-left: 10%;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+/*button*/
+.button{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: inherit;
+    font-weight: 700;
+    border-radius: 1rem;
+    height: 3rem;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button img{
+    margin-right: 0.5rem;
+}
+
+button:hover{
+    background-color: hsl(157, 36%, 27%);;
+}
+
+/*footer*/
+footer{
+position:absolute;
+   bottom:0;
+   width:100%;
+   height:20px;   /* Height of the footer */
+   text-align: center;
+   color:hsl(228, 12%, 48%); 
+}
+
+footer a {
+    color: hsl(158, 36%, 37%);
+}
+
+/*screen change*/
+@media (min-width: 640px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 500px;
+    }
+    
+    .container img{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+        height: 100%;
+    }
+
+    .button img{
+        margin-right: .5rem;
+        padding: 0.8rem;
+    }
+}
+
+
+
+
+
+
+
